@@ -7,9 +7,9 @@ import Post from './components/post';
 
 ReactDOM.render(
     (   <div className="content"> 
-            <div className="panel">
-                <div className="panel-header"> 
-                <h1 className="panel-title">Hello World!</h1>
+            <div className="card">
+                <div className="card-lg"> 
+                <h1 className="card-title">Hello World!</h1>
                 <Post texto="Olá Mundo" titulo="Primeiro"/>
                 <Post texto="Eu sou um segundo Post" titulo="Segundo"/>
                 <Post texto="Sou o último post" titulo="Terceiro"/>
