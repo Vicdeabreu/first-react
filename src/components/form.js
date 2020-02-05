@@ -5,7 +5,22 @@ class Form extends React.Component{
     render(){
         return (
             <div>
-                <h1>Eu so um formulário</h1>
+                <form class="card">
+                <div class="card-header">
+                    <h2 class="card-title">Formulário</h2>
+                </div>
+                <p class="form-group">
+                    <label>Nome</label> 
+                  <input type="text"/>
+                </p>
+                <p class="form-group">
+                  <label>Github</label>
+                  <input type="url"/>
+                </p>
+                <p class="form-group">  
+                  <button class="btn btn-primary">Enviar</button>
+                </p>  
+                </form>
                 {/* props son las propiedades de una clase */}
             </div>
         )
