@@ -7,7 +7,8 @@ export default class TableProfissionais extends React.Component{
         return (
             <div>
                 <h2>Eu so uma tabela</h2>
-                <h2>{this.props.profissionais}</h2>
+                <h2>{this.props.profissionais[0].nome}</h2>
+                <h2>{this.props.profissionais[0].github}</h2>
                 {/* props son las propiedades de una clase */}
             </div>
         )
