@@ -13,10 +13,12 @@ class App extends React.Component {
             this.state = {
                 profissionais: [
                 {
+                id: 1,
                 nome: "Wagner Venceslau",
                 github: "http://github.io/wagven"
                 },
                 {
+                id: 2,
                 nome: "Eduardo Rocha",
                 github: "http://github.io/eduroc"
                 }
@@ -28,11 +30,10 @@ class App extends React.Component {
         console.log("STATE:", this.state);
         return (
             <div>
-                <h1>Hello World</h1>
+                <h1>Lista de profissionais</h1>
                 <Form/>
-                <TableProfissionais profissionais={this.state.profissionais}/>
+                <TableProfissionais dados={this.state.profissionais}/>
             </div>
-            
         )
     }
 }

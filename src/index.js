@@ -12,14 +12,6 @@ ReactDOM.render(
             <div className="card">
                 <div className="card-lg"> 
                 <App/>
-                {/* <Post texto="Olá Mundo" titulo="Primeiro"/>
-                <Post texto="Eu sou um segundo Post" titulo="Segundo"/>
-                <Post texto="Sou o último post" titulo="Terceiro"/>
-                <Post />
-                <Post />
-                <Post />
-                <Post />
-                <Post /> */}
                 </div>
             </div>
         </div>

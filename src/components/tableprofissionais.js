@@ -5,12 +5,29 @@ export default class TableProfissionais extends React.Component{
     render(){
         console.log("PROPS:", this.props);
         return (
-            <div>
-                <h2>Eu so uma tabela</h2>
-                <h2>{this.props.profissionais[0].nome}</h2>
-                <h2>{this.props.profissionais[0].github}</h2>
-                {/* props son las propiedades de una clase */}
-            </div>
+            <table className="table m-5 mb-5">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Github</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {this.props.dados.map((profissional) => {
+                        return (
+                            <tr key={profissional.id}>
+                            <td>
+                            {profissional.nome}
+                            </td> 
+                            <td>
+                            <a href="{profissional.github}">Github do {profissional.nome}</a>
+                            </td>
+                    </tr>
+                        )
+                    })}
+                    
+                </tbody>    
+            </table>
         )
     }
 }
